@@ -24,7 +24,13 @@
       "id": "phonegap-facebook-plugin",
       "locator": "../phonegap-facebook-plugin"
     },
-    "twitter-connect-plugin"
+    "twitter-connect-plugin",
+    "cordova-plugin-device",
+    "cordova-plugin-console",
+    "cordova-plugin-whitelist",
+    "cordova-plugin-splashscreen",
+    "cordova-plugin-statusbar",
+    "ionic-plugin-keyboard"
   ],
   "cordovaPlatforms": [
     "ios",

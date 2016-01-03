@@ -75,4 +75,5 @@
     <preference name="xwalkMode" value="embedded" />
     <preference name="TwitterConsumerKey" value="0agRYIjmoBMzARy064Z59FNXQ" />
     <preference name="TwitterConsumerSecret" value="7V0VZEOxEjFdFPOAStlFqKoM1tZjqFw0XIEkWUg7EwofzOpWxM" />
+    <preference name="xwalkMultipleApk" value="true" />
 </widget>

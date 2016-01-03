@@ -39,3 +39,21 @@ Once in GitHub, create a pull request to upstream. Once it is approved you will 
 git checkout master
 git pull upstream master
 ```
+
+## Builds
+Source app is currently only for iOS but there is an android build in the works
+### iOS
+To build on iOS
+```
+ionic platform add ios
+ionic build ios
+ionic emulate ios
+```
+
+To share through the ionic view app
+```
+ionic link <app-id>
+ionic upload
+```
+
+Get the ionic view app here https://itunes.apple.com/us/app/ionic-view/id849930087?ls=1&mt=8
