@@ -1,8 +1,8 @@
 //for dev
-// var base = "http://192.168.2.10:8080";
-var base = "http://localhost:8080";
+// var base = "http://localhost:8080";
 //for production
-//var base = "http://source-application.herokuapp.com";
+var base = "https://pacific-woodland-8245.herokuapp.com";
+
 
 angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', 'angular-storage'])
     .constant("base", base)
