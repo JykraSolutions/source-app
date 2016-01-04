@@ -29,7 +29,7 @@ git remote add upstream https://github.com/source/source-app
 
 Once you are ready to start working on a feature
 ```
-git checkout -b feature/<your-feature-branch>
+git checkout -b feature/<youionicr-feature-branch>
 git add .
 git commit -m "<a summary of your changes>"
 git push origin feature/<your-feature-branch>
@@ -57,3 +57,5 @@ ionic upload
 ```
 
 Get the ionic view app here https://itunes.apple.com/us/app/ionic-view/id849930087?ls=1&mt=8
+
+## To Do

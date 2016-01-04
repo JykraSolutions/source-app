@@ -3,41 +3,78 @@
     <ion-header-bar class="nav">
         <h1 class="title">S O U R C E</h1>
         <div class="buttons">
-            <i ui-sref="saved" class="icon ion-bookmark menu-icon-right"></i>
+            <i ui-sref="saved" class="icon ion-ios-bookmarks-outline menu-icon-right"></i>
         </div>
     </ion-header-bar>
+
     <ion-content class="has-header" scroll-event-interval="5" >
         <!-- Refresher -->
         <ion-refresher pulling-text="Refreshing . . ." on-refresh="doRefresh()">
         </ion-refresher>
-        <div class="list">
-            <div class="list article-card" ng-repeat="article in articles">
-                <!--{{article.public}}-->
-                <a href="#/tab/user/{{article._userID}}">
-                    <div class="item item-avatar" style="border-bottom:none">
-                        <img src="{{article.gravatarURL}}">
-                        <div class="float-left username">{{article.username}}</div>
-                        <p class="float-right date">{{ article.created | date : 'short' : timezone}}</p>
-                    </div>
-                </a>
-                <a ui-sref="tabs.readerHome( { articleID: article._id} )">
-                    <img class="full-image" src="{{article.imageUrl}}">
-                </a>
 
-                <div class="article-card-inside">
+        <div class="list">
+
+
+            <div class="list card" ng-repeat="article in articles">
+
+              <a href="#/tab/user/{{article._userID}}">
+                <div class="item item-avatar" >
+                  <img src="{{article.gravatarURL}}">
+                  <h2>{{article.username}}</h2>
+                  <p>{{ article.created | date : 'short' : timezone}}</p>
+                </div>
+              </a>
+
+
+              <div class="item item-body">
+                <img class="full-image" src="{{article.imageUrl}}">
+                <h2>{{article.title}}</h2>
+                <p>{{article.shortUrl}}</p>
+
+                <p>
+                  {{article.summary}}
+                </p>
+                <p>
+                  <!-- <button class="button icon-left ion-ios-heart-outline button-clear padding-left-none" ng-click="likeArticle(article)" ng-show="article.isLikedByUser == false">Like</button>
+                  <span class="like-button"><button class="button icon-left ion-ios-heart button-clear padding-left-none heart-pink" ng-click="unlikeArticle(article)" ng-show="article.isLikedByUser == true">Unlike</button></span> -->
+                  <a ng-click="likeArticle(article)" ng-show="article.isLikedByUser == false" class="subdued">Like</a>
+                  <a ng-click="unlikeArticle(article)" ng-show="article.isLikedByUser == true">Unlike</a>
+
+                  <a ng-click="saveForLater(article._id)" ng-if="article.isSavedByUser == false" class="subdued">Save</a>
+                  <a ng-click="deleteSaved(article._id)" ng-if="article.isSavedByUser == true">Remove</a>
+
+                </p>
+              </div>
+
+
+
+                <!-- <a ui-sref="tabs.readerHome( { articleID: article._id} )">
+                    <img class="full-image" src="{{article.imageUrl}}">
+                </a> -->
+
+                <!-- <div class="article-card-inside">
                     <h2 class="article-title">{{article.title}}</h2>
                     <p>{{article.shortUrl}}</p>
                     <p class="article-summary">{{article.summary}}</p>
+
                     <button class="button icon-left ion-ios-heart-outline button-clear padding-left-none" ng-click="likeArticle(article)" ng-show="article.isLikedByUser == false">Like</button>
                     <span class="like-button"><button class="button icon-left ion-ios-heart button-clear padding-left-none heart-pink" ng-click="unlikeArticle(article)" ng-show="article.isLikedByUser == true">Unlike</button></span>
+
                     <button class="button icon-left ion-ios-star-outline button-clear" ng-click="saveForLater(article._id)" ng-if="article.isSavedByUser == false">Save For Later</button>
                     <span class="save-for-later-button">
                         <button class="button icon-left ion-ios-star button-clear" ng-click="deleteSaved(article._id)" ng-if="article.isSavedByUser == true">Remove</button>
                     </span>
-                </div>
-            </div>
-        </div>
+                </div> -->
 
+            </div>
+
+
+
+
+
+
+        </div>
         <ion-infinite-scroll ng-if="!noMoreItemsAvailable" on-infinite="loadMore()" distance="10%"></ion-infinite-scroll>
     </ion-content>
+
 </ion-view>
