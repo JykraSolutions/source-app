@@ -47,6 +47,96 @@ h1, h2, h3, h4, h5, h6, body {
 
 
 
+.bar .title {
+    font-size: 0.9em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+
+
+  // =================================================================
+  //  # Tab Bar
+  //  ================================================================
+
+  .profile-tabs {
+    .tab-item {
+      border: 1px solid #D5D5D5;
+    }
+  }
+
+  @media (min--moz-device-pixel-ratio: 1.5), (-webkit-min-device-pixel-ratio: 1.5), (min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    .tabs {
+      padding-top: 0px!important;
+      border-top: 0px solid #D8D8D8!important;
+    }
+  }
+
+
+
+  .add-button {
+    background-color: #fff;
+    border-top: #f2f2f2 solid;
+  }
+
+  .active-tab {
+    background-color: #EFEFEF;
+    color: #64E387!important;
+  }
+
+  .tab-item .icon {
+    margin: 0px auto;
+    padding: 7px 0;
+    height: 100%;
+    color: $source-gray;
+    margin-top: 1px;
+  }
+
+  .tabs-top > .tabs {
+      left: 0px;
+  }
+
+
+
+
+.tabs-top.tabs-striped .tab-item {
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-weight: 500;
+  font-size: .75em;
+
+}
+
+  // explore tab bar
+  .tabs-top.tabs-striped .tab-item.active {
+    margin-top: 1px;
+    border-width: 0px 0px 5px 0px !important;
+    border-style: solid;
+    border-color: #64E387;
+
+  }
+
+.tab-item.activated {
+  border-color: #64E387 !important;
+}
+
+.bar.bar-positive {
+  border-color: #0c63ee;
+  background-color: #387ef5;
+  color: #fff;
+}
+
+// Transparent scroll bar
+.sticky-header {
+  background-color: rgba(255,255,255,.66) !important; /* or transparent, or background:none */
+}
+.scroll-content {
+  overflow: visible !important;
+}
+
+
+.mynavbar{
+  height: 200px !important;
+}
 
 // =================================================================
 //  # LOGIN
@@ -299,54 +389,7 @@ background-image: linear-gradient(45deg, #4BCEB1 0%, #62EA70 100%);
 .full-image {
   width:100%;
 }
-// =================================================================
-//  # Tab Bar
-//  ================================================================
-.profile-tabs {
-  .tab-item {
-    border: 1px solid #D5D5D5;
-  }
-}
 
-@media (min--moz-device-pixel-ratio: 1.5), (-webkit-min-device-pixel-ratio: 1.5), (min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-  .tabs {
-    padding-top: 0px!important;
-    border-top: 0px solid #D8D8D8!important;
-  }
-}
-
-
-
-.add-button {
-  background-color: #fff;
-  border-top: #f2f2f2 solid;
-}
-
-.active-tab {
-  background-color: #EFEFEF;
-  color: #64E387!important;
-}
-
-.tab-item .icon {
-  margin: 0px auto;
-  padding: 7px 0;
-  height: 100%;
-  color: $source-gray;
-  margin-top: 1px;
-}
-
-.tabs-top > .tabs {
-    left: 0px;
-}
-
-
-// explore tab bar
-.tabs-top.tabs-striped .tab-item.active {
-  margin-top: 1px;
-  border-width: 0px 0px 5px 0px !important;
-  border-style: solid;
-  border-color: #64E387;
-}
 
 
 
@@ -462,6 +505,18 @@ background-image: linear-gradient(45deg, #4BCEB1 0%, #62EA70 100%);
   // font-size: 13px;
 }
 
+// =================================================================
+//  # Explore
+//  ================================================================
+
+.article-list {
+  .item h2 {
+    font-size: 0.8em;
+  }
+  .url {
+    font-size: .8em;
+  }
+}
 
 
 // =================================================================
@@ -474,16 +529,10 @@ background-image: linear-gradient(45deg, #4BCEB1 0%, #62EA70 100%);
       box-shadow: 0px 0px 11px 0px rgba(0,0,0,0.20)!important;
   }
   .card {
-    // box-shadow: none;
-    // border: 1px solid #D1D1D1;
+    box-shadow: none;
+    border: 1px solid #D1D1D1;
   }
 }
-
-
-
-
-
-
 
 .article-card {
   .item-avatar {
@@ -546,41 +595,4 @@ background-image: linear-gradient(45deg, #4BCEB1 0%, #62EA70 100%);
 // Utility class used on home
 .border-bottom-grey {
   border-bottom: 1px solid #ECECEC;
-}
-
-
-
-
-.article-summary {
-  font-weight: 100;
-  font-size: 20px;
-  color: #4A4A4A;
-  line-height: 30px;
-  font-family: 'Source Sans Pro', sans-serif !important;
-}
-
-
-
-
-
-
-
-
-.bar.bar-positive {
-  border-color: #0c63ee;
-  background-color: #387ef5;
-  color: #fff;
-}
-
-// Transparent scroll bar
-.sticky-header {
-  background-color: rgba(255,255,255,.66) !important; /* or transparent, or background:none */
-}
-.scroll-content {
-  overflow: visible !important;
-}
-
-
-.mynavbar{
-  height: 200px !important;
 }
