@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="28px" height="25px" viewBox="0 0 28 25" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.4.4 (17249) - http://www.bohemiancoding.com/sketch -->
+    <title>ios7-heart-outline</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="mobile" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="home" sketch:type="MSArtboardGroup" transform="translate(-556.000000, -770.000000)" fill="#6D6D6D">
+            <g id="ios7-heart-outline" sketch:type="MSLayerGroup" transform="translate(556.000000, 770.000000)">
+                <path d="M20.1833333,1.11271676 C23.8802083,1.11271676 26.884375,4.09682081 26.884375,7.78179191 C26.884375,9.67485549 26.0895833,11.3800578 24.8208333,12.5939306 L14,23.4176301 L2.98958333,12.3988439 C1.8375,11.199422 1.12291667,9.57369942 1.12291667,7.78179191 C1.12291667,4.09682081 4.11979167,1.11271676 7.82395833,1.11271676 C10.609375,1.11271676 12.99375,2.80346821 14.0072917,5.21676301 C15.00625,2.81069364 17.3979167,1.11271676 20.1833333,1.11271676 L20.1833333,1.11271676 Z M20.1833333,0 C17.71875,0 15.4583333,1.1416185 14,3.02023121 C12.5416667,1.1416185 10.28125,0 7.81666667,0 C3.50729167,0 0,3.48988439 0,7.78179191 C0,9.79768786 0.772916667,11.7124277 2.18020833,13.1719653 L13.2052083,24.2052023 L14,25 L14.7947917,24.2052023 L25.6083333,13.3815029 C27.1395833,11.9147399 28,9.92052023 28,7.78179191 C28,3.48988439 24.4927083,0 20.1833333,0 L20.1833333,0 L20.1833333,0 Z" id="Shape" sketch:type="MSShapeGroup"></path>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -9391,6 +9391,15 @@ h1, h2, h3, h4, h5, h6, body {
 .article-card .item-avatar {
   padding-left: 57px; }
 
+.article-card .social-link {
+  margin-right: 5px; }
+
+.article-card .heart-icon {
+  max-width: 14px; }
+
+.article-card .star-icon {
+  max-width: 16px; }
+
 .border-bottom-grey {
   border-bottom: 1px solid #ECECEC; }
 
