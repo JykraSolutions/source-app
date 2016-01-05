@@ -9342,11 +9342,55 @@ h1, h2, h3, h4, h5, h6, body {
   max-height: 65px; }
 
 .item h2 {
-  white-space: normal;
-  font-size: 13px; }
+  white-space: normal; }
 
-.home .nav {
-  box-shadow: 0px 0px 11px 0px rgba(0, 0, 0, 0.2) !important; }
+.home {
+  background-color: #FAFAFA; }
+  .home .nav {
+    box-shadow: 0px 0px 11px 0px rgba(0, 0, 0, 0.2) !important; }
+
+.article-card .item-avatar {
+  border-radius: 0px;
+  display: flex;
+  align-items: center; }
+
+.article-card .item-body {
+  padding: 10px; }
+
+.article-card .username {
+  font-weight: 500;
+  font-size: 1em; }
+
+.article-card .date {
+  margin-left: auto; }
+
+.article-card .title {
+  font-weight: 600;
+  font-size: 0.9em; }
+
+.article-card .url {
+  font-weight: 700;
+  color: #5D92E4;
+  margin-top: 5px;
+  margin-bottom: 0px; }
+
+.article-card .summary {
+  margin-top: 0px;
+  margin-bottom: 0px; }
+
+.article-card .social-buttons {
+  margin-top: 0px;
+  margin-bottom: 0px; }
+
+.border-bottom-grey {
+  border-bottom: 1px solid #ECECEC; }
+
+.article-summary {
+  font-weight: 100;
+  font-size: 20px;
+  color: #4A4A4A;
+  line-height: 30px;
+  font-family: 'Source Sans Pro', sans-serif !important; }
 
 .bar.bar-positive {
   border-color: #0c63ee;
