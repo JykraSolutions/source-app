@@ -81,7 +81,7 @@
     <ion-content>
         <!-- Profile Feed -->
         <div ng-show="isSet(1)">
-          <ion-list ng-init="getProfileFeed()" style="position: absolute; top: 155px;">
+          <ion-list ng-init="getProfileFeed()" style="position: absolute; top: 145px;">
               <div ng-repeat="article in articles">
                   <a ui-sref="tabs.readerProfile( { articleID: article._id} )" class="item item-thumbnail-left">
                       <img src="{{article.imageUrl}}">
@@ -94,7 +94,7 @@
         </div>
         <!-- Saved Feed -->
         <div ng-show="isSet(2)">
-          <ion-list ng-init="getSaved()" style="position: absolute; top: 155px;">
+          <ion-list ng-init="getSaved()" style="position: absolute; top: 145px;">
               <div ng-repeat="savedArticles in savedArticles">
                   <a ui-sref="tabs.readerProfile( { articleID: savedArticles._id} )" class="item item-thumbnail-left">
                       <img src="{{savedArticles.imageUrl}}">
