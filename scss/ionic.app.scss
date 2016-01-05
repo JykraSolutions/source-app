@@ -311,13 +311,11 @@ background-image: linear-gradient(45deg, #4BCEB1 0%, #62EA70 100%);
 @media (min--moz-device-pixel-ratio: 1.5), (-webkit-min-device-pixel-ratio: 1.5), (min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
   .tabs {
     padding-top: 0px!important;
-    border-top: 1px solid #D8D8D8!important;
+    border-top: 0px solid #D8D8D8!important;
   }
 }
 
-.tab-item .icon {
-  margin: 6px auto;
-}
+
 
 .add-button {
   background-color: #fff;
@@ -334,6 +332,7 @@ background-image: linear-gradient(45deg, #4BCEB1 0%, #62EA70 100%);
   padding: 7px 0;
   height: 100%;
   color: $source-gray;
+  margin-top: 1px;
 }
 
 .tabs-top > .tabs {
@@ -536,9 +535,11 @@ background-image: linear-gradient(45deg, #4BCEB1 0%, #62EA70 100%);
   }
   .heart-icon {
     max-width: 14px;
+    margin-right: 2px;
   }
   .star-icon {
     max-width: 16px;
+    margin-right: 2px;
   }
 }
 

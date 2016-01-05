@@ -9252,10 +9252,7 @@ h1, h2, h3, h4, h5, h6, body {
 @media (min--moz-device-pixel-ratio: 1.5), (-webkit-min-device-pixel-ratio: 1.5), (min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
   .tabs {
     padding-top: 0px !important;
-    border-top: 1px solid #D8D8D8 !important; } }
-
-.tab-item .icon {
-  margin: 6px auto; }
+    border-top: 0px solid #D8D8D8 !important; } }
 
 .add-button {
   background-color: #fff;
@@ -9269,7 +9266,8 @@ h1, h2, h3, h4, h5, h6, body {
   margin: 0px auto;
   padding: 7px 0;
   height: 100%;
-  color: #4B4B4B; }
+  color: #4B4B4B;
+  margin-top: 1px; }
 
 .tabs-top > .tabs {
   left: 0px; }
@@ -9395,10 +9393,12 @@ h1, h2, h3, h4, h5, h6, body {
   margin-right: 5px; }
 
 .article-card .heart-icon {
-  max-width: 14px; }
+  max-width: 14px;
+  margin-right: 2px; }
 
 .article-card .star-icon {
-  max-width: 16px; }
+  max-width: 16px;
+  margin-right: 2px; }
 
 .border-bottom-grey {
   border-bottom: 1px solid #ECECEC; }

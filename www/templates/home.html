@@ -60,20 +60,20 @@
                   <!-- <button class="button icon-left ion-ios-heart-outline button-clear padding-left-none" ng-click="likeArticle(article)" ng-show="article.isLikedByUser == false">Like</button>
                   <span class="like-button"><button class="button icon-left ion-ios-heart button-clear padding-left-none heart-pink" ng-click="unlikeArticle(article)" ng-show="article.isLikedByUser == true">Unlike</button></span> -->
                   <a class="social-link" ng-click="likeArticle(article)" ng-show="article.isLikedByUser == false" class="subdued">
-                    <img class="heart-icon" src="/img/heart-outline.svg">
+                    <img class="heart-icon" src="./img/heart-outline.svg">
                     Like
                   </a>
                   <a class="social-link" ng-click="unlikeArticle(article)" ng-show="article.isLikedByUser == true">
-                    <img class="heart-icon" src="/img/heart-fill.svg">
+                    <img class="heart-icon" src="./img/heart-fill.svg">
                     Unlike
                   </a>
 
                   <a class="social-link" ng-click="saveForLater(article._id)" ng-if="article.isSavedByUser == false" class="subdued">
-                    <img class="star-icon" src="/img/star-outline.svg">
+                    <img class="star-icon" src="./img/star-outline.svg">
                     Save for later
                   </a>
                   <a class="social-link" ng-click="deleteSaved(article._id)" ng-if="article.isSavedByUser == true">
-                    <img class="star-icon" src="/img/star-fill.svg">
+                    <img class="star-icon" src="./img/star-fill.svg">
                     Remove
                   </a>
 
