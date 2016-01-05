@@ -9358,8 +9358,8 @@ h1, h2, h3, h4, h5, h6, body {
   padding: 10px; }
 
 .article-card .username {
-  font-weight: 500;
-  font-size: 1em; }
+  font-weight: 600;
+  font-size: 0.9em; }
 
 .article-card .date {
   margin-left: auto; }
@@ -9381,6 +9381,15 @@ h1, h2, h3, h4, h5, h6, body {
 .article-card .social-buttons {
   margin-top: 0px;
   margin-bottom: 0px; }
+
+.article-card .item-avatar > img:first-child {
+  left: 10px;
+  top: 20px;
+  max-width: 35px;
+  max-height: 35px; }
+
+.article-card .item-avatar {
+  padding-left: 57px; }
 
 .border-bottom-grey {
   border-bottom: 1px solid #ECECEC; }

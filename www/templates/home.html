@@ -28,7 +28,7 @@
 
 
               <!-- Image -->
-              <a ui-sref="tabs.readerHome( { articleID: article._id} )">
+              <a ng-hide="!article.imageUrl" ui-sref="tabs.readerHome( { articleID: article._id} )">
                 <img class="full-image" src="{{article.imageUrl}}">
               </a>
 
