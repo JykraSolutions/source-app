@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="44px" height="32px" viewBox="0 0 44 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.4.4 (17249) - http://www.bohemiancoding.com/sketch -->
+    <title>Rectangle 85 + ios7-person-outline copy</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="mobile" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="notifications" sketch:type="MSArtboardGroup" transform="translate(-30.000000, -326.000000)">
+            <g id="Rectangle-85-+-ios7-person-outline-copy" sketch:type="MSLayerGroup" transform="translate(30.000000, 326.000000)">
+                <rect id="Rectangle-85" fill="#5D7BB4" sketch:type="MSShapeGroup" x="0" y="0.261091216" width="43.7550301" height="31.2094595" rx="3"></rect>
+                <g id="ios7-person-outline-copy" transform="translate(13.000000, 8.000000)" fill="#FFFFFF" sketch:type="MSShapeGroup">
+                    <g id="Group">
+                        <path d="M15.035625,15.069375 C14.31,14.810625 13.269375,14.720625 12.605625,14.574375 C12.223125,14.49 11.66625,14.27625 11.480625,14.056875 C11.295,13.831875 11.4075,11.75625 11.4075,11.75625 C11.4075,11.75625 11.750625,11.21625 11.93625,10.74375 C12.121875,10.27125 12.324375,8.9775 12.324375,8.9775 C12.324375,8.9775 12.706875,8.9775 12.841875,8.308125 C12.988125,7.576875 13.213125,7.273125 13.185,6.7275 C13.156875,6.22125 12.8925,6.193125 12.864375,6.193125 L12.864375,6.193125 C12.864375,6.193125 13.14,5.428125 13.179375,3.808125 C13.224375,1.89 11.75625,0 9,0 C6.24375,0 4.78125,1.884375 4.820625,3.8025 C4.854375,5.416875 5.135625,6.1875 5.135625,6.1875 L5.135625,6.1875 C5.1075,6.1875 4.843125,6.215625 4.815,6.721875 C4.786875,7.2675 5.0175,7.56 5.158125,8.29125 C5.293125,8.960625 5.675625,8.96625 5.675625,8.96625 C5.675625,8.96625 5.878125,10.265625 6.06375,10.738125 C6.249375,11.21625 6.5925,11.750625 6.5925,11.750625 C6.5925,11.750625 6.705,13.82625 6.519375,14.05125 C6.33375,14.27625 5.776875,14.484375 5.394375,14.56875 C4.725,14.715 3.69,14.810625 2.964375,15.069375 C2.23875,15.328125 0,16.2 0,18 L9,18 L18,18 C18,16.2 15.76125,15.328125 15.035625,15.069375 L15.035625,15.069375 Z" id="Shape"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

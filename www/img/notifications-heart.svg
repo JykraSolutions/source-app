@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="44px" height="32px" viewBox="0 0 44 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.4.4 (17249) - http://www.bohemiancoding.com/sketch -->
+    <title>Rectangle 85 + Shape 2</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="mobile" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="notifications" sketch:type="MSArtboardGroup" transform="translate(-30.000000, -176.000000)">
+            <g id="Group" sketch:type="MSLayerGroup" transform="translate(0.000000, 120.000000)">
+                <g id="Rectangle-85-+-Shape-2" transform="translate(30.000000, 56.000000)" sketch:type="MSShapeGroup">
+                    <rect id="Rectangle-85" fill="#5D7BB4" x="0" y="0.261091216" width="43.7550301" height="31.2094595" rx="3"></rect>
+                    <path d="M31.3863211,9.45751805 C29.3104286,7.59876876 25.9451433,7.59876876 23.8687541,9.45751805 L22.4591637,10.7199459 L21.0490767,9.45751805 C18.9736808,7.59876876 15.6078989,7.59876876 13.531758,9.45751805 C11.1963479,11.5488836 11.1963479,14.9395079 13.531758,17.0308734 L22.4591637,25.0251188 L31.3863211,17.0311157 C33.7217312,14.9395079 33.7217312,11.5491259 31.3863211,9.45751805 L31.3863211,9.45751805 Z" id="Shape-2" fill="#FFFFFF"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
