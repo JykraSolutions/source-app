@@ -8,42 +8,41 @@
   </ion-nav-back-button>
   </ion-nav-bar>
 
-  <ion-content ng-init="getUser()" class="user">
+  <ion-content ng-init="getUser()">
 
-    <!-- Profile Banner -->
-    <div class="profile--banner">
-      <div class="profile-picture" style="
-        margin-left: auto;
-        margin-right: auto;
-        max-width: 100px;
-        text-align: center;
-        }">
+    <!-- User -->
+    <div class="source-user" style="background-color: #4b4b4b;">
+
+      <div class="profile-picture">
         <img style ="width: 5em; border-radius: 5em; margin-top: 2em;" src="{{gravatarURL}}">
       </div>
-      <div class="username" style="text-align: center;">{{username}}</div>
-      <p class="description" style="text-align: center;">{{description}}</p>
+
+      <div class="username">{{username}}</div>
+      <p class="description">{{description}}</p>
+
       <button ng-click="followUser()" ng-if="relationship == 'notFollowing'" class="button button-block button follow-button">
         Follow
       </button>
       <button ng-click="unfollowUser()" ng-if="relationship == 'following'" class="button button-block button unfollow-button">
         Unfollow
       </button>
-      <div class="row">
+
+      <div class="row stats">
         <div class="col profile-column"><a href="#">
-              <p class="profile--number">{{articleNumber}}</p>
-              <p class="profile-label">Articles</p>
+              <p class="number">{{articleNumber}}</p>
+              <p class="label">Articles</p>
               <a>
         </div>
         <div class="col profile-column">
-              <a ui-sref="tabs.userFollowersExplore( { userID: user_id} )">
-              <p class="profile--number">{{followerNumber}}</p>
-              <p class="profile-label">Followers<p>
+              <a ui-sref="tabs.userFollowers( { userID: user_id} )">
+              <p class="number">{{followerNumber}}</p>
+              <p class="label">Followers<p>
               <a>
         </div>
         <div class="col profile-column">
-              <a ui-sref="tabs.userFollowingExplore( { userID: user_id} )">
-              <p class="profile--number">{{followingNumber}}</p>
-              <p class="profile-label">Following</p>
+              <a ui-sref="tabs.userFollowing( { userID: user_id} )">
+              <p class="number">{{followingNumber}}</p>
+              <p class="label">Following</p>
               </a>
         </div>
       </div>

@@ -14,7 +14,6 @@ $assertive:                       #ef473a !default;
 $royal:                           #886aea !default;
 $dark:                            #444 !default;
 */
-≠
 // The path for our ionicons font files, relative to the built CSS in www/css
 $ionicons-font-path: "../lib/ionic/fonts" !default;
 
@@ -53,6 +52,12 @@ h1, h2, h3, h4, h5, h6, body {
   letter-spacing: 2px;
 }
 
+.bar .button.back-button {
+  font-size: 13px;
+  i {
+
+  }
+}
 
 
   // =================================================================
@@ -587,4 +592,47 @@ h1, h2, h3, h4, h5, h6, body {
 // Utility class used on home
 .border-bottom-grey {
   border-bottom: 1px solid #ECECEC;
+}
+
+
+// =================================================================
+//  # Sourc User
+//  ================================================================
+
+
+.source-user {
+  color: #fff;
+  .profile-picture {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100px;
+    text-align: center;
+    img {
+      width: 5em;
+      border-radius: 5em;
+      margin-top: 2em;
+    }
+  }
+  .username {
+    text-align: center;
+
+  }
+  .description {
+    text-align: center;
+  }
+  .stats {
+    text-align: center;
+    a {
+      text-decoration: none;
+      color: #fff;
+    }
+    .label {
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-size: 0.8em;
+    }
+    .number {
+      font-size: 1.7em;
+    }
+  }
 }
