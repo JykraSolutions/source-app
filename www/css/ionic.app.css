@@ -9179,7 +9179,7 @@ h1, h2, h3, h4, h5, h6, body {
 .preview-field {
   background: #FFFFFF;
   border-style: dotted;
-  margin: 15px 15px 0px 15px;
+  margin: 15px 15px 15px 15px;
   border-width: 2px; }
   .preview-field .preview {
     padding: 2em;
