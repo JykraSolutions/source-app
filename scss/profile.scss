@@ -1,0 +1,46 @@
+// =================================================================
+//  # Profile
+//  ================================================================
+
+
+
+.profile {
+  .tabs-top.tabs-striped .tab-item {
+    // font-size: .5em;
+  }
+  .ff {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-color: #fff;
+    a {
+      color: #565656;
+    }
+    .stat {
+      font-size: 22px;
+      font-weight: 800;
+      font-size: 0.9em;
+      margin-right: 4px;
+    }
+    .label {
+      color: #565656;
+      letter-spacing: 1.35px;
+      font-size: 0.7em;
+      text-transform: uppercase;
+      margin-right: 10px;
+    }
+  }
+
+
+  .profile--banner {
+    background-color: $white;
+    z-index: 6;
+    position: absolute;
+    color: $source-gray;
+    top: 54px;
+    width: 100%;
+    left: -2px;
+    .username {}
+    .description {}
+  }
+
+}
