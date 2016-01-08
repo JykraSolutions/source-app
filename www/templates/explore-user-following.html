@@ -11,11 +11,9 @@
   <ion-content class="has-header">
 	   <ion-list ng-init="getFollowing()">
 
-    	  <a ui-sref="tabs.userExplore( { userID: users._id} )" ng-repeat="users in users">
-          <div class="item item-avatar" >
+    	  <a class="item item-avatar" ui-sref="tabs.userExplore( { userID: users._id} )" ng-repeat="users in users">
             <img src="{{users.gravatarURL}}">
-            <h2>{{users.username}}</h2>
-          </div>
+            <h2 style="margin-top: 10px;">{{users.username}}</h2>
         </a>
 
 
