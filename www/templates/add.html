@@ -7,9 +7,59 @@
         </ion-nav-buttons>
     </ion-nav-bar>
     <ng-form name="addNewForm">
+
         <ion-content>
+
+          <div class="list">
+
+            <div ng-show="!showPublish" class="item preview-field">
+                <div class="preview">Preview</div>
+            </div>
+            <div ng-show="showPublish" class="list">
+                <div>
+                    <a class="item item-thumbnail-left">
+                        <img src="{{article.imageUrl}}">
+                        <h2>{{ article.title }}</h2>
+                    </a>
+                </div>
+            </div>
+
+            <label class="item item-input">
+              <span class="input-label" >URL</span>
+              <input name="Url" id="Url" ng-model="article.url" type="url" placeholder="" required>
+            </label>
+
+
+
+            <label class="item item-input item-select">
+              <div class="input-label">
+                Board
+              </div>
+              <select ng-model="model.boardID" id="Board" name="Board">
+                  <option ng-repeat="b in boards" value={{b._id}}>{{b.name}}</option>
+              </select>
+            </label>
+
+
+            <label class="item item-input">
+                <input ng-maxlength="120" name="Summary" id="Summary" ng-model="article.summary" type="text" placeholder="Summary (optional)" type="text" placeholder="Summary">
+            </label>
+
+            <button style="margin-top: 0px;" class="button button-block publish-button source-green" ng-click="postArticleForm()" ng-show="!showPublish">
+                Preview Article
+            </button>
+            <button style="margin-top: 0px;" class="button button-block publish-button source-green" ng-click="publishArticle()" ng-show="showPublish">
+                Post Article
+            </button>
+
+
+
+          </div>
+
+
+
             <!-- Show this to start -->
-            <div class="list">
+            <!-- <div class="list">
                 <div ng-show="!showPublish" class="item preview-field">
                     <div class="preview">Preview</div>
                 </div>
@@ -56,7 +106,13 @@
             </button>
             <button class="button button-block publish-button source-green" ng-click="publishArticle()" ng-show="showPublish">
                 Post Article
-            </button>
+            </button> -->
+
+
+
         </ion-content>
+
+
+
     </ng-form>
 </ion-view>

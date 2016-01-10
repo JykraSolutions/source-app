@@ -6,11 +6,9 @@
 
     <ion-content class="has-header">
         <ion-list>
-            <a ui-sref="tabs.userProfile( { userID: users._id} )" ng-repeat="users in users">
-                <div class="item item-avatar">
-                    <img src="{{users.gravatarURL}}">
-                    <h2>{{users.username}}</h2>
-                </div>
+            <a class="item item-avatar" ui-sref="tabs.userProfile( { userID: users._id} )" ng-repeat="users in users">
+              <img src="{{users.gravatarURL}}">
+              <h2 style="margin-top: 10px;">{{users.username}}</h2>
             </a>
         </ion-list>
     </ion-content>

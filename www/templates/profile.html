@@ -1,11 +1,4 @@
-
-
-
-
-
-<ion-view view-title="Profile">
-
-
+<ion-view class="profile" view-title="Profile">
 
   <ion-nav-bar class="bar">
 
@@ -18,18 +11,39 @@
 
 
       <div class="profile--banner" style="background-color: #fff;">
-          <div class="row">
-            <div class="col col-25">
-              <div class="profile-picture" >
-                  <img src="{{gravatarURL}}">
-              </div>
-            </div>
-            <div class="col col-75">
-              <div class="username">{{username}}</div>
-              <p class="description">{{description}}</p>
+        <div class="item item-avatar" style="border-radius: 0px;">
+          <img src="{{gravatarURL}}">
+          <h2 class="username">{{username}}</h2>
+          <p class="description">{{description}}</p>
+        </div>
+
+        <div class="item ff">
+          <a class="text-decoration-none" ui-sref="tabs.profileFollowing"><span class="stat">{{profileFollowerNumber}}</span><span class="label"> Followers</span></a>
+          <a class="text-decoration-none" ui-sref="tabs.profileFollowers"><span class="stat">{{profileFollowingNumber}}</span><span class="label"> Following</span></a>
+        </div>
+
+
+
+
+
+          <div class="tabs-striped tabs-top tabs-background">
+            <div class="tabs" style="top: 104px; height: 52px;">
+              <a class="tab-item active" ng-class="{ active: isSet(1) }" ng-click="setTab(1)">
+                Recent
+              </a>
+              <a class="tab-item" ng-class="{ active: isSet(2) }" ng-click="setTab(2)">
+                Saved
+              </a>
+              <a class="tab-item" href="#/tab/profile/boards">
+                Boards
+              </a>
             </div>
           </div>
-          <div class="row">
+
+
+
+
+          <!-- <div class="row">
               <div class="col profile-column">
                   <a>
                       <p class="profile--number">{{profileArticleNumber}}</p>
@@ -54,36 +68,12 @@
                       <p class="profile-label">Following</p>
                   </a>
               </div>
-          </div>
+          </div> -->
       </div>
 
 
-      <div class="tabs-striped tabs-top tabs-background profile-tabs">
-          <div class="tabs top-shadow" style="top: 221px;">
-              <a class="tab-item active" ng-class="{ active: isSet(1) }" ng-click="setTab(1)">
-                  Recent
-              </a>
-              <a class="tab-item" ng-class="{ active: isSet(2) }" ng-click="setTab(2)">
-                  Boards
-              </a>
-              <a class="tab-item" ng-class="{ active: isSet(3) }" ng-click="setTab(3)">
-                  Saved
-              </a>
-              <a class="tab-item" ng-class="{ active: isSet(4) }" ng-click="setTab(4)">
-                  Sources
-              </a>
-          </div>
-      </div>
 
   </ion-nav-bar>
-
-
-
-
-
-
-
-
 
 
 
@@ -91,7 +81,7 @@
     <ion-content>
         <!-- Profile Feed -->
         <div ng-show="isSet(1)">
-          <ion-list ng-init="getProfileFeed()" style="position: absolute; top: 221px;">
+          <ion-list ng-init="getProfileFeed()" style="position: absolute; top: 145px;">
               <div ng-repeat="article in articles">
                   <a ui-sref="tabs.readerProfile( { articleID: article._id} )" class="item item-thumbnail-left">
                       <img src="{{article.imageUrl}}">
@@ -101,6 +91,20 @@
                   </a>
               </div>
           </ion-list>
+        </div>
+        <!-- Saved Feed -->
+        <div ng-show="isSet(2)">
+          <ion-list ng-init="getSaved()" style="position: absolute; top: 145px;">
+              <div ng-repeat="savedArticles in savedArticles">
+                  <a ui-sref="tabs.readerProfile( { articleID: savedArticles._id} )" class="item item-thumbnail-left">
+                      <img src="{{savedArticles.imageUrl}}">
+                      <div><h2 class="no-text-wrap">{{ savedArticles.title }}</h2></div>
+                      <p>{{ savedArticles.shortUrl }}</p>
+                      <div class="right">{{savedArticles._boardID.name}}</div>
+                  </a>
+              </div>
+          </ion-list>
+
         </div>
     </ion-content>
 

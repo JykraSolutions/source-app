@@ -1,0 +1,41 @@
+// =================================================================
+//  # LOGIN
+//  ================================================================
+
+.login {
+  background-image: linear-gradient(-180deg, #404042 0%, #FFFFFF 0%, #F7F7F7 32%, #F3F3F3 86%, #BFBFBF 100%);
+
+  .item.item-input {
+    border-radius: 2em;
+  }
+
+  input[type="text"], input[type="password"] {
+    color: $source-gray;
+    padding-left: 10px;
+    &:focus {
+      border-color: #60DA6B!important;
+    }
+  }
+
+  .headline {
+    text-align: center;
+    color: $source-gray!important;
+    letter-spacing: 10px;
+    margin: 1em 1em;
+  }
+
+  // remvoves white background from ionic component
+  .list-inset {
+    background-color: transparent;
+  }
+  .button-outline.button-outline {
+    border-color: #FFFFFF;
+    background-image: linear-gradient(45deg, #4BCEB1 0%, #62EA70 100%);
+    color: $source-gray;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    border-radius: 2em;
+    padding: 5px;
+  }
+}

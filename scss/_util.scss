@@ -1,0 +1,76 @@
+// Utility class used on home
+.border-bottom-grey {
+  border-bottom: 1px solid #ECECEC;
+}
+
+// =================================================================
+//  # UTILITIES
+//  ================================================================
+
+
+
+.padding-left-none {
+  padding-left:0;
+}
+
+.text-decoration-none {
+  text-decoration: none;
+}
+
+
+.source-outline-button {
+  color: #fff;
+}
+
+.top-shadow {
+  box-shadow: 0px 0px 11px 0px rgba(0,0,0,0.06);
+}
+
+.opacity-95 {
+  opacity: 0.95;
+}
+
+
+.like-button {
+  .button.icon-left:before {
+      color: #F78383;
+  }
+}
+
+.save-for-later-button {
+  .button.icon-left:before {
+      color: #4BCEB1;
+  }
+}
+
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+.no-text-wrap {
+  white-space: normal;
+}
+
+.menu-icon-left {
+  font-size: 2.5em;
+  padding-left: 10px;
+}
+
+.menu-icon-right {
+  font-size: 2em;
+    padding-right: 14px;
+    padding-top: 3px;
+    color: #737373;
+}
+
+.full-image {
+  width:100%;
+}

@@ -21,11 +21,11 @@
             <!-- Refresher -->
             <ion-refresher pulling-text="Refreshing . . ." on-refresh="doRefresh()"> </ion-refresher>
 
-            <div class="list" style="margin-top: 48px;" >
+            <div class="list article-list" style="margin-top: 48px;" >
                 <a ng-repeat="article in articles" ui-sref="tabs.readerExplore( { articleID: article._id} )" class="item item-thumbnail-left">
                     <img src="{{article.imageUrl}}">
                     <h2 class="no-text-wrap">{{ article.title }}</h2>
-                    <p>{{ article.shortUrl }}</p>
+                    <p class="url">{{ article.shortUrl }}</p>
                 </a>
             </div>
             <ion-infinite-scroll ng-if="!noMoreItemsAvailable" on-infinite="loadMore()" distance="10%"></ion-infinite-scroll>
@@ -33,7 +33,7 @@
 
         <!-- USERS -->
         <div ng-show="isSet(2)">
-            <div class="list" style="margin-top: 48px;" ng-init="getAllUsers()">
+            <div class="list article-list" style="margin-top: 48px;" ng-init="getAllUsers()">
                 <a ng-repeat="user in users"
                    ui-sref="tabs.userExplore( { userID: user._id} )">
                     <div class="item item-avatar">
@@ -46,7 +46,7 @@
 
         <!-- TOP -->
         <div ng-show="isSet(3)">
-            <div class="list" style="margin-top: 48px;" ng-init="getTopLiked()">
+            <div class="list article-list" style="margin-top: 48px;" ng-init="getTopLiked()">
                 <a ng-repeat="topArticles in topArticles"
                    ui-sref="tabs.readerExplore( { articleID: topArticles._id} )"
                    class="item item-thumbnail-left">

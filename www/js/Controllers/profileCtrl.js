@@ -96,4 +96,27 @@ angular.module('starter.controllers')
 
 
     };
+
+    $scope.getSaved = function () {
+
+        var id = window.localStorage.SourceID;
+
+
+        $scope.users = API.getSaved(id)
+            .success(function (data, status, headers, config) {
+                $scope.savedArticles = [];
+
+                for (var i = 0; i < data.length; i++) {
+                    $scope.savedArticles.push(data[i]);
+                };
+
+                $scope.savedArticlesNumber = data.length;
+
+
+            })
+            .error(function (users, status, headers, config) {
+                console.log("Something went wrong")
+            });
+
+    };
 });

@@ -1,0 +1,27 @@
+// =================================================================
+//  # Add
+//  ================================================================
+
+
+.preview-field {
+  background: #FFFFFF;
+  border-style: dotted;
+  margin: 15px 15px 15px 15px;
+  border-width: 2px;
+  .preview {
+    padding: 2em;
+    text-align: center;
+    text-transform: uppercase;;
+    letter-spacing: 1px;
+    color: #A1a1a1;
+  }
+}
+
+.publish-button {
+  color: #fff;
+  border-width: 0;
+  &:hover {
+    color: #fff;
+    opacity: 0.65;
+  }
+}
