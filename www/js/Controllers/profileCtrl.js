@@ -1,5 +1,6 @@
 angular.module('starter.controllers')
 .controller('ProfileCtrl', function ($rootScope, $scope, API, $stateParams) {
+
     $scope.$on('$ionicView.beforeEnter', function () {
         $scope.getProfile();
         $scope.getProfileFeed();

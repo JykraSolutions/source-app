@@ -9277,9 +9277,6 @@ h1, h2, h3, h4, h5, h6, body {
 .article-card .item-avatar {
   padding-left: 57px; }
 
-.article-card .social-link {
-  margin-right: 5px; }
-
 .article-card .heart-icon {
   max-width: 14px;
   margin-right: 2px; }
@@ -9315,7 +9312,7 @@ h1, h2, h3, h4, h5, h6, body {
     padding: 5px; }
 
 .profile .ff {
-  padding-top: 5px;
+  padding-top: 0px;
   padding-bottom: 5px;
   border-color: #fff; }
   .profile .ff a {
@@ -9323,12 +9320,12 @@ h1, h2, h3, h4, h5, h6, body {
   .profile .ff .stat {
     font-size: 22px;
     font-weight: 800;
-    font-size: 0.9em;
+    font-size: 1.2em;
     margin-right: 4px; }
   .profile .ff .label {
     color: #565656;
     letter-spacing: 1.35px;
-    font-size: 0.7em;
+    font-size: 1em;
     text-transform: uppercase;
     margin-right: 10px; }
 

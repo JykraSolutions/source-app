@@ -215,4 +215,3 @@ angular.module('starter.controllers')
         init();
     });
 });
-
