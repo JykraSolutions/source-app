@@ -31,6 +31,23 @@
   }
 
 
+  h2 {
+    max-height: 29px;
+  }
+
+  .board-id {
+    float: right;
+    background-color: #fff;
+    font-size: 0.7em;
+    border: 1px solid #979797;
+    padding: 0px 7px;
+    border-radius: 1em;
+    position: relative;
+    top: -11px;
+    color: #979797;
+  }
+
+
   .profile--banner {
     background-color: $white;
     z-index: 6;
