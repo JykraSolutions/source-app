@@ -9329,6 +9329,20 @@ h1, h2, h3, h4, h5, h6, body {
     text-transform: uppercase;
     margin-right: 10px; }
 
+.profile h2 {
+  max-height: 29px; }
+
+.profile .board-id {
+  float: right;
+  background-color: #fff;
+  font-size: 0.7em;
+  border: 1px solid #979797;
+  padding: 0px 7px;
+  border-radius: 1em;
+  position: relative;
+  top: -11px;
+  color: #979797; }
+
 .profile .profile--banner {
   background-color: #ffffff;
   z-index: 6;
@@ -9425,7 +9439,8 @@ h1, h2, h3, h4, h5, h6, body {
   line-height: 3 !important; }
 
 .article-list .item h2 {
-  font-size: 0.8em; }
+  font-size: 0.8em;
+  max-height: 30px; }
 
 .article-list .url {
   font-size: .8em; }

@@ -18,8 +18,8 @@
         </div>
 
         <div class="item ff">
-          <a style="border-color: #fff;" class="text-decoration-none button button-light" ui-sref="tabs.profileFollowing"><span class="stat">{{profileFollowerNumber}}</span><span class="label"> Followers</span></a>
-          <a style="border-color: #fff;" class="text-decoration-none button button-light" ui-sref="tabs.profileFollowers"><span class="stat">{{profileFollowingNumber}}</span><span class="label"> Following</span></a>
+          <a style="border-color: #fff;" class="text-decoration-none button button-light" ui-sref="tabs.profileFollowers"><span class="stat">{{profileFollowerNumber}}</span><span class="label"> Followers</span></a>
+          <a style="border-color: #fff;" class="text-decoration-none button button-light" ui-sref="tabs.profileFollowing"><span class="stat">{{profileFollowingNumber}}</span><span class="label"> Following</span></a>
         </div>
 
 
@@ -80,7 +80,7 @@
 
     <ion-content>
         <!-- Profile Feed -->
-        <div ng-show="isSet(1)">
+        <!-- <div ng-show="isSet(1)">
           <ion-list ng-init="getProfileFeed()" style="position: absolute; top: 145px;">
               <div ng-repeat="article in articles">
                   <a ui-sref="tabs.readerProfile( { articleID: article._id} )" class="item item-thumbnail-left">
@@ -90,7 +90,22 @@
                       <div class="right">{{article._boardID.name}}</div>
                   </a>
               </div>
-          </ion-list>
+          </ion-list> -->
+
+          <div ng-show="isSet(1)">
+            <div ng-init="getProfileFeed()" class="list article-list" style="position: absolute; top: 145px;" >
+                <a ng-repeat="article in articles" ui-sref="tabs.readerProfile( { articleID: article._id} )" class="item item-thumbnail-left">
+                    <img src="{{article.imageUrl}}">
+                    <h2 class="no-text-wrap">{{ article.title }}</h2>
+                    <p class="url">{{ article.shortUrl }}</p>
+                    <!-- <div class="board-id">{{article._boardID.name}}</div> -->
+                </a>
+            </div>
+
+
+
+
+
         </div>
         <!-- Saved Feed -->
         <div ng-show="isSet(2)">

@@ -13,7 +13,7 @@
 
         <a ng-show="{{notifications.type=='liked your post'}}" ui-sref="tabs.readerNotificaitons( { articleID: notifications.associated_article} )" class="item item-icon-left">
           <i style="color: #5D7BB4" class="icon ion-ios-heart"></i>
-          <p style=" margin-top: 15px;float: left;"><span style="    font-weight: 700;
+          <p style="margin: 18px 0; float: left;"><span style="    font-weight: 700;
 
               margin-bottom: 0px;">{{notifications.doer_username}}</span> {{notifications.type}}</p>
           <img style="position: relative;max-width: 80px;float: right;"src="{{notifications.imageUrl}}">
@@ -21,7 +21,7 @@
 
         <a ng-show="{{notifications.type=='is now following you'}}"  ui-sref="tabs.userNotificaitons( { userID: notifications.doer_id} )" class="item item-icon-left">
           <i style="color: #5D7BB4" class="icon ion-ios-person"></i>
-          <p><span style="    font-weight: 700;
+          <p style="margin: 18px 0;"><span style="margin: 18px 0; font-weight: 700;
               margin-bottom: 0px;">{{notifications.doer_username}}</span> {{notifications.type}}</p>
         </a>
       </div>
